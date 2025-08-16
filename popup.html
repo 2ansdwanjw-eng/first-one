@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Community Wealth Tracker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Roblox Community Wealth Tracker</h1>
+            <p>Track community members by wealth</p>
+        </div>
+        
+        <div class="input-section">
+            <label for="communityLink">Community Link:</label>
+            <input 
+                type="url" 
+                id="communityLink" 
+                placeholder="https://www.roblox.com/communities/35461612/Z9-Market#!/about"
+                class="link-input"
+            >
+            <button id="searchBtn" class="btn btn-primary">Search for List</button>
+        </div>
+        
+        <div class="status-section">
+            <div id="status" class="status"></div>
+            <div id="progress" class="progress-bar" style="display: none;">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <div class="results-section">
+            <div class="results-header">
+                <h2>Community Members by Wealth</h2>
+                <button id="refreshBtn" class="btn btn-secondary" style="display: none;">Refresh</button>
+            </div>
+            <div id="results" class="results-list"></div>
+        </div>
+        
+        <div class="footer">
+            <p>Only limited items > 10,000 Robux are counted</p>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
